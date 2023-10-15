@@ -1,0 +1,75 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Rubik', sans-serif;
+    font-size: 40px;
+    color: rgb(209, 209, 209);
+    text-align: center;
+    box-sizing: border-box; /* Добавлено для учета padding и border в ширине элементов */
+}
+
+body {
+    background-color: rgb(57, 55, 55);
+}
+
+form {
+    max-width: 1200px;
+    margin: 0 auto; /* Центрирование формы по горизонтали */
+    padding: 20px; /* Добавлен отступ вокруг формы */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    min-height: 100vh; /* Заполнение высоты окна браузера */
+}
+
+button {
+    margin-top: 20px;
+    cursor: pointer;
+    width: 200px;
+    height: 50px;
+    border-radius: 10px;
+    border: none; /* Используйте "border" вместо "border-style: none" */
+    background-color: rgba(0, 0, 0, 0.722);
+}
+
+#questions {
+    margin: 10px;
+}
+
+input {
+    text-align: center;
+    color: black;
+    background-color: rgb(255, 255, 255);
+    width: 100%; /* Заполнение доступной ширины контейнера */
+    max-width: 300px; /* Максимальная ширина для input */
+}
+
+/* Media Query для управления стилями на разных разрешениях экрана */
+@media screen and (max-width: 768px) {
+    *{
+        font-size: 20px;
+    }
+    form {
+        padding: 10px; /* Уменьшение отступов на маленьких экранах */
+    }
+    button {
+        width: 100%; /* Кнопка займет всю доступную ширину */
+        max-width: 300px; /* Ограничение максимальной ширины */
+    }
+}
+
+/* Дополнительные Media Query для других разрешений, если необходимо */
+@media screen and (min-width: 1200px) {
+    form {
+        padding: 40px; /* Увеличение отступов на больших экранах */
+    }
+    button {
+        width: 300px; /* Увеличение ширины кнопки на больших экранах */
+    }
+}
+
+
+
+
+
